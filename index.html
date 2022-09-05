@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/Grid.css">
+    <link rel="stylesheet" href="./asset/css/Responsive.css">
+    <link rel="stylesheet" href="./asset/fontawesome/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./index.js">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-Tablet-Mobile">
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar--item header__navbar--appearQR header__navbar--item--separate">
+                            Vào cửa hàng trên ứng dụng tickID
+                            <!-- QR Code  -->
+                            <div class="header__qr">
+                                <img src="./asset/img/QRcode.png" alt="" class="header__qr--img">
+                                <div class="header__qr--apps">
+                                    <a href="#" class="header__qr--link">
+                                        <img src="./asset/img/GGplay.png" alt="GooglePlay" class="header__qr--download">
+                                    </a>
+                                    <a href="#" class="header__qr--link">
+                                        <img src="./asset/img/Appstore.png" alt="AppStore" class="header__qr--download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar--item">
+                            <span class="header__navbar--nocursor">Kết Nối</span>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar--icon fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar--icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar--item header__navbar--hasNotify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar--icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+
+                            <div class="header__notify">
+                                <header class="header__notify--header">
+                                    <h3>Thông báo vừa nhận gần đây</h3>
+                                </header>
+
+                                <ul class="header__notify--list">
+                                    <li class="header__notify--items header__notify--items--viewed">
+                                        <a href="#" class="header__notify--link">
+                                            <img src="https://bizweb.dktcdn.net/100/031/560/products/broshop-iphone-13-pro-max-gold.png?v=1647134708940"
+                                                alt="" class="header__notify--img">
+                                            <div class="header__notify--infor">
+                                                <span class="header__notify--name">
+                                                    Apple iPhone 13 Pro max
+                                                </span>
+
+                                                <span class="header__notify--desc">
+                                                    Màn hình 6.7 inch, Camera Cinematic...
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify--items">
+                                        <a href="#" class="header__notify--link">
+                                            <img src="https://image.pngaaa.com/207/6304207-middle.png" alt=""
+                                                class="header__notify--img">
+                                            <div class="header__notify--infor">
+                                                <span class="header__notify--name">
+                                                    Samsung Galaxy Z Fold 3 phiên bản giới hạn
+                                                </span>
+
+                                                <span class="header__notify--desc">
+                                                    Thiết kế gập, màn hình lớn 7,6 inch với độ phân giải 2208 x 1768
+                                                    pixel và mật độ điểm ảnh 374PPI .
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="header__notify--items">
+                                        <a href="#" class="header__notify--link">
+                                            <img src="https://bizweb.dktcdn.net/100/031/560/products/broshop-iphone-13-pro-max-gold.png?v=1647134708940"
+                                                alt="" class="header__notify--img">
+                                            <div class="header__notify--infor">
+                                                <span class="header__notify--name">
+                                                    Apple iPhone 13 Pro
+                                                </span>
+
+                                                <span class="header__notify--desc">
+                                                    Màn hình 6.1 inch, Camera Cinematic...
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <footer class="header__notify--footer">
+                                    <a href="" class="header__notify--btnall">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar--item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar--icon fa-solid fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar--item header__navbar--item--strong header__navbar--item--separate">Đăng nhập</li>
+                        <li class="header__navbar--item header__navbar--item--strong">Đăng ký</li> -->
+                        <li class="header__navbar--item header__navbar--user">
+                            <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/279005038_2333190500165155_6430130512894083581_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9ku1_de5qOwAX_1nCNt&tn=iqhLgdzDSyYpJXOx&_nc_ht=scontent.fhan5-6.fna&oh=00_AT9_6lnM35fhz1p9WCUyLb3z8l1t_me5eL51eE9cTNbYWA&oe=62F83ED0" alt="" class="header__navbar--user--avatar">
+                             <span class="header__navbar--user--name">Vũ Thắng</span>
+
+                             <ul class="header__navbar--user--menu">
+                                <li class="header__navbar--user--item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+
+                                <li class="header__navbar--user--item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+
+                                <li class="header__navbar--user--item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+
+                                <li class="header__navbar--user--item header__navbar--user--item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                             </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- header__logo-search = with-search ở hướng dẫn -->
+                <div class="header__logo--search"> 
+
+                    <label for="mobile__search--checkbox" class="header__mobile--search">
+                        <i class="header__mobile--search--icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <div class="header__logo hide-on-Tablet">
+                        <a href="#" class="header__logo--link">
+                            <svg class= "header__logo--img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 16" focusable="false">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M0.964 0H121.507V32H0.964z" transform="translate(-9 -8)"></path>
+                                    <path fill="#fff" fill-rule="nonzero" d="M15.937 19.184c.155.363.104.829.026 1.114-.13.492-.466 1.01-1.45 1.01-.931 0-1.5-.54-1.5-1.347v-1.45H9v1.14C9 22.99 11.614 24 14.436 24c2.692 0 4.918-.932 5.28-3.417.181-1.295.052-2.123-.026-2.46-.62-3.133-6.29-4.065-6.73-5.8-.077-.31-.051-.62-.026-.776.104-.466.4-1.01 1.372-1.01.88 0 1.398.54 1.398 1.346v.933h3.728v-1.062C19.432 8.492 16.507 8 14.384 8c-2.666 0-4.815.88-5.229 3.314-.103.673-.13 1.269.026 2.02.673 3.028 5.98 3.909 6.756 5.85zm48.534-.025c.155.362.103.828.026 1.087-.13.492-.466.984-1.45.984-.932 0-1.475-.54-1.475-1.347V18.46h-3.96v1.139c0 3.288 2.588 4.297 5.383 4.297 2.667 0 4.867-.906 5.23-3.391.18-1.269.05-2.123-.027-2.434-.621-3.107-6.238-4.013-6.652-5.747-.078-.311-.052-.622-.026-.777.104-.466.414-.984 1.346-.984.854 0 1.372.54 1.372 1.346v.907h3.701V11.78c0-3.21-2.899-3.728-4.995-3.728-2.615 0-4.763.88-5.177 3.288-.104.647-.13 1.243.026 1.993.673 3.03 5.927 3.91 6.678 5.826zm30.984 1.32l-.207-12.013h3.701v14.757h-5.332l-3.753-12.401.207 12.401h-3.676V8.466h5.54l3.52 12.013zM28.335 9.553l-2.07 13.826h-4.038l2.74-14.913h6.652l2.74 14.913h-4.012l-2.02-13.826zm21.796 0L47.542 23.38h-3.779L41.201 9.553l-.104 13.826H37.37l.31-14.913h6.083l1.89 11.65 1.89-11.65h6.082l.337 14.913h-3.728l-.103-13.826zm26.868 11.6c1.035 0 1.372-.726 1.424-1.088.026-.156.026-.389.026-.57V8.4h3.779V19.16c0 .284-.026.828-.026.983-.259 2.797-2.46 3.703-5.203 3.703-2.74 0-4.94-.906-5.203-3.703-.026-.155-.052-.699-.026-.983V8.4h3.78v11.055c0 .181 0 .414.025.57.078.388.389 1.087 1.424 1.087zm31.165-.156c1.087 0 1.45-.7 1.527-1.088.026-.18.052-.388.026-.57v-2.174h-1.527V14.99h5.28v4.013c0 .285 0 .492-.051.984-.259 2.719-2.615 3.676-5.255 3.676-2.64 0-4.996-.957-5.254-3.676-.052-.492-.052-.699-.052-.984v-6.291c0-.259.026-.725.052-.984.336-2.796 2.588-3.676 5.254-3.676 2.64 0 4.97.88 5.229 3.676.052.466.026.984.026.984v.492h-3.78v-.829s0-.362-.051-.57c-.078-.336-.362-1.087-1.501-1.087-1.088 0-1.398.725-1.476 1.088-.052.207-.052.466-.052.699v6.835c0 .181 0 .388.026.57.104.414.492 1.087 1.58 1.087z" transform="translate(-9 -8)"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile__search--checkbox" class="header__search--checkbox">
+
+                    <div class="header__search">
+                        <div class="header__search--input--wrap">
+                            <input type="text" class="header__search--input" placeholder="Tìm kiếm sản phẩm">
+
+                            <!-- Search history -->
+                            <div class="header__search--history">
+                                <h3 class="header__search--history--heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search--history--list">
+                                    <li class="header__search--history--item">
+                                        <a href="">Samsung Z Fold 3</a>
+                                    </li>
+
+                                    <li class="header__search--history--item">
+                                        <a href="">Samsung Z Flip 3</a>
+                                    </li>
+
+                                    <li class="header__search--history--item">
+                                        <a href="">Samsung Galaxy S22 Ultra</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search--selection">
+                            <span class="header__search--selection--lable">Trong Shop</span>
+                            <i class="header__search--selection--icon fa-solid fa-arrow-down"></i>
+
+                            <ul class="header__search--option">
+                                <li class="header__search--option--item header__search--option--item--active">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+
+                                <li class="header__search--option--item">
+                                    <span>Trong shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__search--btn">
+                            <i class="header__search--btn--icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart--wrap">
+                            <i class="header__cart--icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart--quantity">3</span>
+                            <!-- Empty Cart: header__cart--list--empty -->
+                            <div class="header__cart--list">
+                                <img src="./asset/img/empty-cart.png" alt="Ảnh giỏ hàng trống" class="header__cart--empty--img">
+                                <span class="header__cart--empty--message">Chưa có sản phẩm</span>
+ 
+                                <h4 class="header__cart--heading">Sản phẩm đã thêm</h4>
+
+                                <ul class="header__cart--list--item">
+                                    <li class="header__cart--item">
+                                        <img src="./asset/img/tabs8ultra.jpg" alt="" class="header__cart--img">
+
+                                        <div class="header__cart--item--infor">
+                                            <div class="header__cart--item--head">
+                                                <h5 class="header__cart--item--name">Samsung Galaxy Tab S8 Ultra Samsung Galaxy Tab S8 Ultra Samsung Galaxy Tab S8 Ultra</h5>
+                                                <div class="header__cart--item-price--wrap  ">
+                                                    <span class="header__cart--item-price">32.150.000 đ</span>
+                                                    <span class="header__cart--item--multi">X</span>
+                                                    <span class="header__cart--item--quantity">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart--item--body">
+                                                <span class="header__cart--item--description">Phân loại: Phụ kiện</span>
+
+                                                <span class="header__cart--item--remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                <li class="header__cart--item">
+                                    <img src="./asset/img/tabs8ultra.jpg" alt="" class="header__cart--img">
+
+                                    <div class="header__cart--item--infor">
+                                        <div class="header__cart--item--head">
+                                            <h5 class="header__cart--item--name">Samsung Galaxy Tab S8 Ultra</h5>
+                                            <div class="header__cart--item-price--wrap  ">
+                                                <span class="header__cart--item-price">32.150.000 đ</span>
+                                                <span class="header__cart--item--multi">X</span>
+                                                <span class="header__cart--item--quantity">1</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="header__cart--item--body">
+                                            <span class="header__cart--item--description">Phân loại: Phụ kiện</span>
+
+                                            <span class="header__cart--item--remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="header__cart--item">
+                                    <img src="./asset/img/macbookairm1.jpg" alt="" class="header__cart--img">
+
+                                    <div class="header__cart--item--infor">
+                                        <div class="header__cart--item--head">
+                                            <h5 class="header__cart--item--name">Macbook Air M1 2020</h5>
+                                            <div class="header__cart--item-price--wrap  ">
+                                                <span class="header__cart--item-price">22.150.000 đ</span>
+                                                <span class="header__cart--item--multi">X</span>
+                                                <span class="header__cart--item--quantity">1</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="header__cart--item--body">
+                                            <span class="header__cart--item--description">Phân loại: Máy tính bảng</span>
+
+                                            <span class="header__cart--item--remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>   
+                            </ul>
+                                <a href="#" class="header__cart--view btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header__sort--bar">
+                <li class="header__sort--item">
+                    <a href="" class="header__sort--link">Liên Quan</a>
+                </li>
+                <li class="header__sort--item header__sort--item--ACTIVE">
+                    <a href="" class="header__sort--link">Mới nhất</a>
+                </li>
+                <li class="header__sort--item">
+                    <a href="" class="header__sort--link">Giá</a>
+                </li>
+                <li class="header__sort--item">
+                    <a href="" class="header__sort--link">Bán chạy</a>
+                </li>
+            </ul>
+        </header>
+
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading--icon fa-solid fa-bars"></i>Danh mục
+                            </h3>
+                            
+                            <ul class="category__list">
+                                <li class="category__item category__item--active">
+                                    <a href="#" class="category__item--link">Di Động</a>
+                                </li>
+                                
+                                <li class="category__item">
+                                    <a href="#" class="category__item--link">Smart Home</a>
+                                </li>
+            
+                                <li class="category__item">
+                                    <a href="#" class="category__item--link">Gia Dụng</a>
+                                </li>
+                                
+                                <li class="category__item">
+                                    <a href="#" class="category__item--link">Màn Hình</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home__filter hide-on-Tablet-Mobile">
+                            <span class="home__filter--lable">Sắp xếp theo</span>
+                            <button class="home__filter--btn btn">Phổ biến</button>
+                            <button class="home__filter--btn btn btn--primary">Mới nhất</button>
+                            <button class="home__filter--btn btn">Bán chạy</button>
+
+                            <div class="select__input">
+                                <span class="select__input--lable">Giá</span>
+                                <i class="select__input--icon fa-solid fa-arrow-down"></i>
+
+                                <!-- List -->
+                                <ul class="select__input--list">
+                                    <li class="select__input--item">
+                                        <a href="#" class="select__input--link">Giá thấp tới cao</a>
+                                    </li>
+
+                                    <li class="select__input--item">
+                                        <a href="#" class="select__input--link">Giá cao tới thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home__filter--paginate">
+                                <span class="home__filter--number">
+                                    <span class="home__filter--paginate--current">1</span>/14
+                                </span>
+    
+                                <div class="home__filter--control">
+                                    <a href="#" class="home__filter--control--btn home__filter--control--btn--disable">
+                                        <i class="home__filter--control--icon fa-solid fa-arrow-left"></i>
+                                    </a>
+                                    <a href="#" class="home__filter--control--btn">
+                                        <i class="home__filter--control--icon fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                        </div>
+                        </div>
+
+
+                        <nav class="mobile__category">
+                            <ul class="mobile__category--list">
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+                                
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+                                <li class="mobile__category--item">
+                                    <a href="" class="mobile__category--link">Phụ kiện di động</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="home-products">
+                            <!-- Grid > Row > Column -->
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                    <div class="home__products--img" style="background-image: url(https://images.samsung.com/vn/smartphones/galaxy-s22-ultra/models/images/galaxy-s22-ultra_models_colors_burgundy.jpg);"></div>
+                                    <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                    <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                    <div class="home__products--img" style="background-image: url(https://br.atsit.in/vi/wp-content/uploads/2021/08/samsung-galaxy-z-fold-2-so-voi-galaxy-z-fold-3-co-gi-moi-1.png);"></div>
+                                    <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                    <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                    <div class="home__products--img" style="background-image: url(https://phuongtung.vn/pt/images/detailed/22/Zflip1-640x640_locf-w8_75vh-y1.png);"></div>
+                                    <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                    <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                    <div class="home__products--img" style="background-image: url(https://images.samsung.com/vn/smartphones/galaxy-s22-ultra/models/images/galaxy-s22-ultra_models_colors_burgundy.jpg);"></div>
+                                    <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                    <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                        <div class="home__products--img" style="background-image: url(https://images.samsung.com/vn/smartphones/galaxy-s22-ultra/models/images/galaxy-s22-ultra_models_colors_burgundy.jpg);"></div>
+                                        <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                        <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                        <div class="home__products--img" style="background-image: url(https://api.sammobile.com/static/6-07%20Tab%20S8%20Ultra%20Book%20Cover%20_7__HI.png?16414512);"></div>
+                                        <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                        <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                        <div class="home__products--img" style="background-image: url(https://phongvu.vn/cong-nghe/wp-content/uploads/2020/12/apple-airpods-max-phong-vu-2.png);"></div>
+                                        <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                        <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                        <div class="home__products--img" style="background-image: url(https://www.viendongmobile.com/vnt_upload/product/03_2022/Air5_Blue.png);"></div>
+                                        <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                        <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                        <div class="home__products--img" style="background-image: url(https://dienthoaivui.com.vn/wp-content/uploads/2022/03/Case-Cooling-iphone-13PM.jpg);"></div>
+                                        <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                        <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__products--items" href="#">
+                                        <div class="home__products--img" style="background-image: url(https://laptopre.vn/upload/picture/picture-11618308034.jpg);"></div>
+                                        <h5 class="home__products--name">Samsung Galaxy S22 Ultra 12GB / 256GB, Màu Burgundy</h5>
+                                        <div class="home__products--price">
+                                            <span class="home__products--price--old">36.000kđ</span>
+                                            <span class="home__products--price--current">29.990.000đ</span>
+                                        </div>
+
+                                        <div class="home__products--action">
+                                            <span class="home__products--action--like home__products--action--liked">
+                                                <i class="action__like--empty far fa-heart"></i>
+                                                <i class="action__like--fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home__products--action--star">
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="action__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home__products--items--sold">20 Đã bán</span>
+                                        </div>
+
+                                        <div class="home__products--origin">
+                                            <span class="home__products--origin--band">SAMSUNG</span>
+                                            <span class="home__products--origin--country">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home__products--favourite">
+                                            <span>
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home__products--saleoff">
+                                            <span class="home__products--saleoff--percent">30%</span>
+                                            <span class="home__products--saleoff--lable">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home__products--pagination">
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">
+                                    <i class="pagination__items--icon fa-solid fa-arrow-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination__items pagination__items--active">
+                                <a href="#" class="pagination__items--link">1</a>
+                            </li>
+
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">2</a>
+                            </li>
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">3</a>
+                            </li>
+
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">4</a>
+                            </li>
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">5</a>
+                            </li>
+
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">...</a>
+                            </li>
+
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">17</a>
+                            </li>
+                            <li class="pagination__items">
+                                <a href="#" class="pagination__items--link">
+                                    <i class="pagination__items--icon fa-solid fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">F8 Shop</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Tải ứng dụng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">
+                                    <i class="footer__items--icon fa-brands fa-facebook"></i>
+                                    Facebook</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">
+                                    <i class="footer__items--icon fa-brands fa-instagram"></i>
+                                    Instagram</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">
+                                    <i class="footer__items--icon fa-brands fa-linkedin"></i>
+                                    Linked</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Laptop</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Máy tính bảng</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items--link">Điện thoại</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-2-4 m-8 c-12">
+                        <h3 class="footer__heading">Theo dõi chúng tôi</h3>
+                        <div class="footer__download">
+                            <img src="/asset/img/QRcode.png" alt="" class="footer__download--qr">
+                            <div class="footer__download--apps">
+                                <a href="" class="footer__download--apps--link">
+                                    <img src="/asset/img/Appstore.png" alt="AppStore" class="footer__download--apps--img">
+                                </a>
+
+                                <a href="" class="footer__download--apps--link">
+                                    <img src="/asset/img/GGplay.png" alt="GooglePlay" class="footer__download--apps--img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">Bản quyền thuộc về tôi</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal layout -->
+     <!-- <div class="modal"> -->
+        <!-- <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body"> -->
+            
+            <!-- Sign up form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                            <a href="" class="auth-form__text-link">Điều khoản Dịch vụ </a>
+                            & <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn btn--normal" style="margin-right: 12px;">TRỞ LẠI</button>
+
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--fb btn btn--size--s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__socials--gg btn btn--size--s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+                
+            <!-- Sign in form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+                            
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email">
+                        </div>
+                            
+                        <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                            
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help--forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-link--separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+                            
+                    <div class="auth-form__control">
+                        <button class="btn btn--normal" style="margin-right: 12px;">TRỞ LẠI</button>
+                            
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                            
+                    </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--fb btn btn--size--s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                                <span class="auth-form__socials-title">
+                                    Đăng nhập với Facebook
+                                </span>
+                            </a>
+                            
+                            <a href="" class="auth-form__socials--gg btn btn--size--s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-title">
+                                Đăng nhập với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+        </div> -->
+
+</body>
+
+</html>

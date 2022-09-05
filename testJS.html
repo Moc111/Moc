@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.js">
+
+</head>
+<body>
+    
+
+    <h1>    Xin chào JavaScript </h1>
+
+    <script>
+        var myString = "VU HUU THANG";
+
+        // Fild index
+        console.log(myString.length);
+
+        console.log(myString.indexOf("THANG"));
+
+        console.log(myString.search("THANG"))
+
+        // Cut String
+
+        console.log(myString.slice(-5, -1));
+
+        // Replace - Ghi đè
+
+        console.log(myString.replace("HUU", " "));
+        // console.log(myString.replace(/U/g, "1"));        "/u/g" - biểu thức chính quy thay thế tất cả các kí tự.
+
+        // Upper case
+
+        console.log(myString.toUpperCase()); // Viết Hoa tất cả
+
+        console.log(myString.toLocaleLowerCase()); // viết thường...
+
+        // Trim - loại bỏ kí tự trắng ở 2 đầu kí tự
+
+        console.log(myString.trim());
+
+        // Split - tách các phần tử theo điểm chung
+
+        var languages = 'Vu, Huu, Thang';
+
+        console.log(languages.split(', '));
+
+        // Get a character by index
+
+        const myString2 = 'Oanh';
+
+        console.log(myString2.charAt('0'));
+
+        console.log(myString2[2]); //  Cách 2
+
+
+    </script>
+</body>
+</html>
