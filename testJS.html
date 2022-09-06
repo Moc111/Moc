@@ -43,7 +43,7 @@
 
         console.log(myString.trim());
 
-        // Split - tách các phần tử theo điểm chung
+        // Split - tách các phần tử theo điểm chung dạng mảng
 
         var languages = 'Vu, Huu, Thang';
 
@@ -56,6 +56,42 @@
         console.log(myString2.charAt('0'));
 
         console.log(myString2[2]); //  Cách 2
+
+
+        /*
+            Kiểu Số
+        */
+
+        
+        var age = 21;
+        var Pi = 3.1435544;
+
+        console.log(typeof age.toString()); // toString(); chuyển định dạng dữ liệu sang kiểu String
+
+        // toFixed(); chuyển định dạng về String và rút gọn số thập phân sau dấu chấm()
+        // Ví dụ 3.49 thì lấy 3, >= .5 thì làm tròn lên
+        // (X) x là số chữ số muốn lấy sau dấu phẩy VD: 3.5657, với x = 2 được 3.56;
+        console.log( Pi.toFixed(3)); 
+
+
+        /*
+            MẢNG
+
+            - Mảng chứa được tất cả các loại dữ liệu(null, undefined, function, object...)
+
+            .lenght(); - lấy độ dài
+            
+        */ 
+
+        var array = [
+            'Oanh',
+            'Xinh',
+            'Dep',
+        ];
+
+        console.log(array[0]);
+
+
 
 
     </script>
