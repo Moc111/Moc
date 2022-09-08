@@ -91,9 +91,82 @@
 
         console.log(array[0]);
 
+        var languages2 = [
+            'HTML',
+            'CSS',
+            'JS',
+        ]
+        
+        // toString -> chuyển kiểu từ object qua string
+        console.log(languages2.toString());
+
+        //Join chuyển từ array thành một chuỗi, có thể chuyển tham số vào dạng kí tự để ngăn cách giữa các phần tử.
+        console.log(languages2.join());
+
+        // pop(); Xóa phần tử ở cuối mảng và trả về phần tử đã xóa
+
+        console.log(languages2.pop());
+
+        // push(a, b, c); Thêm phần tử vào cuối mảng và trả về số lượng sau khi thêm
+
+        console.log(languages2.push(' SCSS '));
+
+        // shift(); Xóa phần tử ở đầu mảng và trả về phần tử đã xóa;
+
+        console.log(languages2.shift(' Hihi'));
+
+        // unshift(); Thêm phần tử vào đầu mảng và trả về số lượng sau khi thêm
+
+        console.log(languages2.unshift(' 123 '));   
+
+        /*splice(); xóa phần tử theo chỉ mục + số lượng -> Có thể thay thế 2 tham số truyền vào theo yêu cầu
+        ( splice(a,x, y)) : với a là điểm bắt đầu, x là số lượng phần tử muốn xóa, xóa tăng dần a+1; 
+         - trường hợp có thêm y và x = 0 : được hiểu là chèn(chèn y vào vị trí x); 
+         - trường hợp x != 0: được hiểu là thay thế y vào vị trí a, và xóa các phần tử theo số lượng (x), bắt đầu xóa từ sau khi hoàn thành thay thế.
+         - Y không giới hạn số lượng (do đây là phần tử muốn thêm).
+        */  
+        languages2.splice(1, 3, 'C++')
+
+        // X.concat(a); a là mảng cần nối vào sau mảng đã có (X)
+
+        console.log(languages.concat(languages2));
+
+        // slice(x, y); Cắt từ vị trí x tới y, nếu không truyền tham số y sẽ cắt từ x tới cuối mảng và sau đó sẽ trả về phần tử đã cắt.
+        // slice(0): copy mảng;
+
+        console.log(languages2.slice(1, 2))
 
 
+        var myInfor = {
+            age: 21,
+            name: 'Vu Thang',
+            address: 'Quang Ninh'
+        };
 
+        myInfor.nho = 'Vu Oanh'
+
+        // object.key - key có thể thay thế bằng các trường thông tin của object -> hàm sẽ in ra dữ liệu của key(vd name -> 'Vu Thang')
+        console.log(myInfor.nho);
+
+        // delete object.key - xóa trường dữ liệu key của đối tượng.
+
+        delete myInfor.address;
+
+        // OBJECT CONSTRUCTOR
+
+        function user(firstName, lastName, Avatar){        
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.Avatar = Avatar;
+        }
+
+        var author = new user('Son', 'Dang', 'Hihi');
+
+        var User = new user('Vu', 'Huu', 'Thang')
+
+        console.log(author);
+
+        console.log(User);
     </script>
 </body>
 </html>
