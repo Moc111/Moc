@@ -160,13 +160,83 @@
             this.Avatar = Avatar;
         }
 
-        var author = new user('Son', 'Dang', 'Hihi');
+        // var author = new user('Son', 'Dang', 'Hihi');
 
-        var User = new user('Vu', 'Huu', 'Thang')
+        // var User = new user('Vu', 'Huu', 'Thang')
 
-        console.log(author);
+        // console.log(author);
 
-        console.log(User);
+        // console.log(User);
+
+
+
+        /* Đối tượng date
+
+            6 Tham số có thể truyền vào hàm Date();
+
+            - a, b, c, x, y, z || Tương ứng (NĂM < THÁNG < NGÀY < GIỜ < PHÚT < GIÂY)
+            - Thiếu tham số nào sẽ tự động lược bỏ dần
+
+            Tháng thể hiện từ 0 - 11; ứng với tháng 1 bắt đầu từ 0 và tối đa là 11( tháng 12)
+            Số tháng lớn hơn 11 - tự động cộng thêm năm        
+
+            nếu a(NĂM) chỉ có 2 số sẽ hiểu là: 19xx
+
+
+        */
+        var date = new Date();
+
+        var year = date.getFullYear(); 
+
+        /* 
+        */
+        var month = date.getMonth(); 
+
+        console.log(`${month} / ${year}`);
+
+        /*
+            MATH OBJECT
+        */
+        Math.E; // trả về số Euler (2.7xxx)
+        Math.PI; // trả về số PI
+        Math.abs(); // g.trị tuyệt đối
+        /*
+        - Math.ceil(x) - Làm tròn lên;
+        - Math.floor(x) - làm tròn xuống;
+        - Math.round(x) - làm tròn số gần nhất;
+        - Math.trunc(x) - trả về phần nguyên x;
+        */
+
+        console.log(Math.E);
+        console.log(Math.abs(-20));
+        console.log(Math.ceil(3.3));
+
+        // Random số 0 -> 1;
+        // Kết hợp với floor để random số nguyên và chọn giới hạn được bắt đầu từ 0
+
+        console.log(Math.random());
+        console.log(Math.floor(Math.random() * 10));
+
+        var random = Math.floor(Math.random() * 5);
+
+        var Coin = [
+            '1 coin',
+            '2 coin',
+            '3 coin',
+            '4 coin',
+            '5 coin',
+        ];
+
+        console.log(Coin[random]);
+
+       // .min(x, y); Tìm giá trị nhỏ nhất trong dãy, tối thiểu 2 tham số;
+
+       console.log(Math.min(10, 2, -3 , 20));
+
+       console.log(Math.max(10, 2, -3 , 20));
+
+       
+
     </script>
 </body>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello JavaScript</h1>
+
+</body>
+
+<script>
+    
+    var date = 10;
+        // if (date === 2) {
+        //     console.log('Hôm nay là thứ 2')
+        // } else {
+        //     console.log('Hôm nay không phải thứ 2')
+        // }
+
+    switch(date){
+        case 2: console.log('Hôm nay là thứ 2')
+        break;
+
+        case 3: console.log('Hôm nay là thứ 3');
+        break;
+
+        case 4: console.log('Hôm nay là thứ 4');
+        break;
+
+        case 5: console.log('Hôm nay là thứ 5');
+        break;
+
+        case 6: console.log('Hôm nay là thứ 6');
+        break;
+
+        case 7: console.log('Hôm nay là thứ 7');
+        break;
+
+        default: console.log('Hôm nay là CN');
+    }
+
+    var array = [
+        "Java",
+        'css',
+        'html'
+    ]
+
+    // for(var key in array){
+    //     // array[key], tương tự sẽ in ra các phần tử, key chỉ in chỉ mục;
+    //     console.log(key);
+    // }
+
+    // for (var key of array){
+    //     console.log(array[key]);
+    // }
+
+    var a = 1;
+    var i = 1;
+    while(i <= 6){
+        if(i % 3 == 0){
+            console.log(`${i} chia het cho 3`);
+        }
+        i++;
+    }
+
+    for( i = 0; i < 10 ; i++){
+
+        if( i%2 == 0){    
+            console.log(i);
+        }
+    }
+
+    var myArray = [
+        [1, 2],
+        [3, 4],
+        [5, 6],
+    ]
+
+    for(var i = 0 ; i < myArray.length ; i++){
+        for(var j = 0 ; j < myArray[i].length ; j++){
+            console.log(myArray[i][j]);
+        }
+    }
+
+    var array = ['a', 'b', 'c', 'd', 'd', 'a'];
+
+    // Set: đặc điểm là chỉ lấy ra các phần từ unique;
+    // cú pháp: new Set([array]) - xuất dưới dạng kiểu set
+    // - [...(new Set(array))] - xuất dưới dạng mảng như ban đầu
+    console.log([...(new Set(array))]);
+
+    /* Lưu ý:
+    - xác định điểm dừng
+    - kiểm soát bài toán(chạy, ngưng khi nào)
+
+    Giải thích countDown();
+
+    - Truyền vào 1 tham số 'num';
+    - Kiểm tra điều kiện
+    - nếu num > 0 in ra num
+    - return lại hàm countDown(hàm lượt 1 sẽ kết thúc ở return đầu tiên ?)
+    - ngược lại điều kiện không được thực thi sẽ tiếp tục.
+    */
+
+    function countDown(num){
+        if(num > 0){
+            console.log(num);
+            return countDown(num-1);
+        }
+        return console.log('Chuc mung nam moi');
+    }
+
+        countDown(5);
+
+    /*
+
+    */
+
+    function loop(start, end, callback){
+        if(start < end){
+            callback(start);
+            return loop(start + 1, end, callback);
+        }
+        return console.log('hoan thanh duyet mang');
+    }
+
+    var array3 = [
+        'Java',
+        'PHP',
+        'CSS',
+    ];
+
+    loop(0, array3.length, function(index){
+        console.log(array3[index]);
+    });
+
+    /*
+        bài toán giai thừa
+    */
+
+    function giaiThua(num){
+        if(num > 0){
+            return num * giaiThua(num - 1);
+        }
+        return 1;
+    }
+
+    console.log(giaiThua(3));
+
+</script>
+
+</html>
